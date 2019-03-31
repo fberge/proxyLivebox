@@ -1,0 +1,109 @@
+<config>
+	<configuration>
+		<livebox ip="192.168.1.12" port="8080" />
+		<server ip="0.0.0.0" port="8585" />
+	</configuration>
+	<keys>
+		<key code="116" name="ON_OFF" />
+		<key code="512" name="0" />
+		<key code="513" name="1" />
+		<key code="514" name="2" />
+		<key code="515" name="3" />
+		<key code="516" name="4" />
+		<key code="517" name="5" />
+		<key code="518" name="6" />
+		<key code="519" name="7" />
+		<key code="520" name="8" />
+		<key code="521" name="9" />
+		<key code="402" name="CHP" />
+		<key code="403" name="CHM" />
+		<key code="115" name="VOLP" />
+		<key code="114" name="VOLM" />
+		<key code="113" name="MUTE" />
+		<key code="103" name="UP" />
+		<key code="108" name="DOWN" />
+		<key code="105" name="LEFT" />
+		<key code="116" name="RIGHT" />
+		<key code="352" name="OK" />
+		<key code="158" name="BACK" />
+		<key code="139" name="MENU" />
+		<key code="164" name="PLAY_PAUSE" />
+		<key code="168" name="FBWD" />
+		<key code="159" name="FFWD" />
+		<key code="167" name="REC" />
+		<key code="393" name="VOD" />
+	</keys>
+	<channels>
+		<channel name="TF1">
+			<key id="1" action="1" />
+		</channel>
+		<channel name="FRANCE2">
+			<key id="1" action="2" />
+		</channel>
+		<channel name="FRANCE3">
+			<key id="1" action="3" />
+		</channel>
+		<channel name="CANALPLUS">
+			<key id="1" action="4" />
+		</channel>	
+		<channel name="FRANCE5">
+			<key id="1" action="5" />
+		</channel>
+		<channel name="M6">
+			<key id="1" action="6" />
+		</channel>
+		<channel name="ARTE">
+			<key id="1" action="7" />
+		</channel>
+		<channel name="C8">
+			<key id="1" action="8" />
+		</channel>
+		<channel name="W9">
+			<key id="1" action="9" />
+		</channel>		
+		<channel name="TMC">
+			<key id="1" action="1" />
+			<key id="2" action="0" />
+		</channel>	
+		<channel name="NT1">
+			<key id="1" action="1" />
+			<key id="2" action="1" />
+		</channel>
+		<channel name="NRJ12">
+			<key id="1" action="1" />
+			<key id="2" action="2" />
+		</channel>	
+		<channel name="FRANCE4">
+			<key id="1" action="1" />
+			<key id="2" action="4" />
+		</channel>		
+		<channel name="CSTAR">
+			<key id="1" action="1" />
+			<key id="2" action="7" />
+		</channel>			
+		<channel name="HD1">
+			<key id="1" action="2" />
+			<key id="2" action="0" />
+		</channel>
+		<channel name="6TER">
+			<key id="1" action="2" />
+			<key id="2" action="2" />
+		</channel>
+		<channel name="NUM23">
+			<key id="1" action="2" />
+			<key id="2" action="3" />
+		</channel>			
+		<channel name="TEVA">
+			<key id="1" action="3" />
+			<key id="2" action="4" />
+		</channel>		
+	</channels>
+	<macros>
+		<macro name="volumep">
+			<key id="1" action="VOLP" mode="0" repeat="param" />
+		</macro>
+		<macro name="volumem" param="loop">
+			<key id="1" action="VOLM" mode="0" repeat="param" />
+		</macro>
+	</macros>
+</config>
