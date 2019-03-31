@@ -1,0 +1,14 @@
+Proxy Livebox permettant d'envoyer des commandes REST pour simuler les appuis touche:
+3 commandes requêtes sont définies :
+ . http://ip:port/key/<key_id> = appuis touche 
+ . http://ip:port/channel/<channel_id> = sélection chaine (simule les appuis touche configurés)
+ . http://ip:port/macro/<macro_id>/<param> = macro pouvant posséder 1 paramètre (nombre de répétitions)
+
+
+Intégration à IFTTT :
+
+trigger : Google assistant "Say a phrase with a text ingredient"
+ . exemple de phrase : Mets la chaine $
+action : webhook
+ . http://<external ip>:<port>/channel/{{TextField}}
+ . méthode GET
